@@ -14,5 +14,13 @@ public class Utils {
 		reader.close();
 		return result;
 	}
+	public static long isInArray(Object[] array, Object item){
+		for(long i=0;i<array.length;i++){
+			if(array[i].equals(item)){
+				return i;
+			}
+		}
+		return -1;
+	}
 
 }
